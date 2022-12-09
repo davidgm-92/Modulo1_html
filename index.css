@@ -1,0 +1,80 @@
+body {
+    background-color: black;
+    color: rgb(42, 179, 42);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: min-content auto auto;
+    min-width: 636px;
+    grid-template-rows: auto auto auto;
+    gap: 0px 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    border: 1px solid white;
+}
+
+.grid-item {
+    /*border: 1px solid red;*/
+}
+
+.grid-header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#profile-picture {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    padding: 10px;
+    display: flex;
+    height: 200px;
+    margin: auto;
+}
+
+#name {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-size: 2em;
+    height: fit-content;
+    text-align: center;
+    padding: 5px;
+}
+
+#author-desc {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    height: fit-content;
+}
+
+#prof-exp {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 2em;
+    height: fit-content;
+    text-align: center;
+    padding: 10px;
+}
+
+.company {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.duration {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.job-description {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-left: 20px;
+}
